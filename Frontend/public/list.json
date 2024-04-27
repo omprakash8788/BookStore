@@ -1,0 +1,82 @@
+[
+    {
+        "id":1,
+        "name":"Stroy Book",
+        "title":"Life to jhad hai baki sab moh maya hai",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/realistic-book-lover-composition-with-stack-colorful-books-with-eyeglasses-home-plants-tea-cup-vector-illustration_1284-77312.jpg?t=st=1714038140~exp=1714041740~hmac=4ef741339ca93b0b9c073d02a88b616bfdbdba82c11b974eee2631521f82e4b5&w=740"
+    },
+    {
+        "id":2,
+        "name":"Life Learning",
+        "title":"Life to jhad hai baki sab moh maya hai",
+        "price":20,
+        "category":"Entainment",
+        "image":"https://img.freepik.com/free-vector/realistic-book-lover-composition-with-stack-colorful-books-with-eyeglasses-home-plants-tea-cup-vector-illustration_1284-77312.jpg?t=st=1714038140~exp=1714041740~hmac=4ef741339ca93b0b9c073d02a88b616bfdbdba82c11b974eee2631521f82e4b5&w=740"
+    },
+    {
+        "id":3,
+        "name":"Sport Book",
+        "title":"Life to jhad hai baki sab moh maya hai",
+        "price":30,
+        "category":"Sports",
+        "image":"https://img.freepik.com/free-vector/realistic-book-lover-composition-with-stack-colorful-books-with-eyeglasses-home-plants-tea-cup-vector-illustration_1284-77312.jpg?t=st=1714038140~exp=1714041740~hmac=4ef741339ca93b0b9c073d02a88b616bfdbdba82c11b974eee2631521f82e4b5&w=740"
+    },
+    {
+        "id":4,
+        "name":"Music Book",
+        "title":"Life to jhad hai baki sab moh maya hai",
+        "price":80,
+        "category":"Song",
+        "image":"https://img.freepik.com/free-vector/realistic-book-lover-composition-with-stack-colorful-books-with-eyeglasses-home-plants-tea-cup-vector-illustration_1284-77312.jpg?t=st=1714038140~exp=1714041740~hmac=4ef741339ca93b0b9c073d02a88b616bfdbdba82c11b974eee2631521f82e4b5&w=740"
+    },
+    {
+        "id":5,
+        "name":"Stroy Book",
+        "title":"Life to jhad hai baki sab moh maya hai",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/realistic-book-lover-composition-with-stack-colorful-books-with-eyeglasses-home-plants-tea-cup-vector-illustration_1284-77312.jpg?t=st=1714038140~exp=1714041740~hmac=4ef741339ca93b0b9c073d02a88b616bfdbdba82c11b974eee2631521f82e4b5&w=740"
+    },
+    {
+        "id":6,
+        "name":"Stroy Book",
+        "title":"Life to jhad hai baki sab moh maya hai",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/realistic-book-lover-composition-with-stack-colorful-books-with-eyeglasses-home-plants-tea-cup-vector-illustration_1284-77312.jpg?t=st=1714038140~exp=1714041740~hmac=4ef741339ca93b0b9c073d02a88b616bfdbdba82c11b974eee2631521f82e4b5&w=740"
+    },
+    {
+        "id":7,
+        "name":"Stroy Book",
+        "title":"Life to jhad hai baki sab moh maya hai",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/realistic-book-lover-composition-with-stack-colorful-books-with-eyeglasses-home-plants-tea-cup-vector-illustration_1284-77312.jpg?t=st=1714038140~exp=1714041740~hmac=4ef741339ca93b0b9c073d02a88b616bfdbdba82c11b974eee2631521f82e4b5&w=740"
+    },
+    {
+        "id":8,
+        "name":"Stroy Book",
+        "title":"Life to jhad hai baki sab moh maya hai",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/realistic-book-lover-composition-with-stack-colorful-books-with-eyeglasses-home-plants-tea-cup-vector-illustration_1284-77312.jpg?t=st=1714038140~exp=1714041740~hmac=4ef741339ca93b0b9c073d02a88b616bfdbdba82c11b974eee2631521f82e4b5&w=740"
+    },
+    {
+        "id":9,
+        "name":"Stroy Book",
+        "title":"Life to jhad hai baki sab moh maya hai",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/realistic-book-lover-composition-with-stack-colorful-books-with-eyeglasses-home-plants-tea-cup-vector-illustration_1284-77312.jpg?t=st=1714038140~exp=1714041740~hmac=4ef741339ca93b0b9c073d02a88b616bfdbdba82c11b974eee2631521f82e4b5&w=740"
+    },
+    {
+        "id":10,
+        "name":"Food Book",
+        "title":"Life to jhad hai baki sab moh maya hai",
+        "price":200,
+        "category":"Food",
+        "image":"https://img.freepik.com/free-vector/realistic-book-lover-composition-with-stack-colorful-books-with-eyeglasses-home-plants-tea-cup-vector-illustration_1284-77312.jpg?t=st=1714038140~exp=1714041740~hmac=4ef741339ca93b0b9c073d02a88b616bfdbdba82c11b974eee2631521f82e4b5&w=740"
+    }
+]
