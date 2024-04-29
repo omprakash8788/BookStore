@@ -33,7 +33,7 @@ const Signup = () => {
         navigate(from, {replace:true})
       
       }
-      localStorage.setItem("Users", JSON.stringify(res.data));
+      localStorage.setItem("Users", JSON.stringify(res.data.user));
  
     })
     .catch((err)=>{

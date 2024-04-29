@@ -4,7 +4,7 @@ import { useAuth } from "../context/AuthProvider";
 import Logout from "./Logout";
 
 const Navbar = () => {
-  const [authUser, setAuthUser]=useAuth()
+  const [authUser, setAuthUser] = useAuth();
   // console.log(authUser)
   const [sticky, setSticky] = useState(false);
   const [theme, setTheme] = useState(
@@ -154,20 +154,21 @@ const Navbar = () => {
               </label>
             </div>
             {/* Auth user logic */}
-            {
-             authUser ? <Logout/> :
-            <div className="">
-              <a
-                className="bg-black text-white p-3 rounded-md hover:bg-slate-800 duration-300 cursor-pointer"
-                onClick={() =>
-                  document.getElementById("my_modal_3").showModal()
-                }
-              >
-                Login
-              </a>
-              <Login />
-            </div>
-            }
+            {authUser ? (
+              <Logout />
+            ) : (
+              <div className="">
+                <a
+                  className="bg-black text-white p-3 rounded-md hover:bg-slate-800 duration-300 cursor-pointer"
+                  onClick={() =>
+                    document.getElementById("my_modal_3").showModal()
+                  }
+                >
+                  Login
+                </a>
+                <Login />
+              </div>
+            )}
           </div>
         </div>
       </div>
