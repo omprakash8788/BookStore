@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import axios from "axios";
+import toast from "react-hot-toast";
 
 const Login = () => {
   const {
@@ -8,7 +10,38 @@ const Login = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = async (data) => {
+    // console.log(data);
+    const userInfo = {
+      email: data.email,
+      password: data.password,
+    };
+    // called api
+    await axios
+      .post("http://localhost:4000/user/login", userInfo)
+      .then((res) => {
+        console.log(res.data);
+        if (res.data) {
+          // alert("Login Successfully")
+          toast.success("Login Successfully");
+          document.getElementById("my_model_3").close();
+          setTimeout(() => {
+            window.location.reload();
+            localStorage.setItem("Users", JSON.stringify(res.data.user));
+          }, 3000);
+        }
+      })
+      .catch((err) => {
+        // console.log(err);
+        // alert("Signup Error" + err)
+        if (err.response) {
+          console.log(err);
+          // alert("Error:" + err.response.data.message)
+          toast.error("Error:" + err.response.data.message);
+          setTimeout(() => {}, 3000);
+        }
+      });
+  };
   return (
     <div>
       <dialog id="my_modal_3" className="modal">
@@ -23,47 +56,53 @@ const Login = () => {
               ✕
             </Link>
             <h3 className="font-bold text-center text-lg">Login</h3>
-          <hr />
-          <div className="mt-4 space-y-2">
-            <span>Email</span> <br />
-            <input
-              className="w-80 py-1 px-3 border rounded-md outline-none"
-              type="email"
-              placeholder="Enter Your Email"
-              {...register("email", { required: true })}
-            />
-            <br />
-            {errors.email && <span className="text-sm text-red-500">This field is required</span>}
-          </div>
-          <div className="mt-4 space-y-2">
-            <span>Password</span> <br />
-            <input
-              className="w-80 py-1 px-3 border rounded-md outline-none"
-              type="password"
-              placeholder="Enter Your Password"
-              {...register("password", { required: true })}
-            />
-            <br />
-            {errors.password && <span className="text-sm text-red-500">This field is required</span>}
-
-          </div>
-          {/* button */}
-          <div className="flex justify-around mt-4">
-            <button className="bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200">
-              Login
-            </button>
-            <p>
-              Not registered?{" "}
-              <Link
-                to="/signup"
-                className="underline text-blue-500 cursor-pointer"
-              >
-                Signup
-              </Link>
-            </p>
-          </div>
+            <hr />
+            <div className="mt-4 space-y-2">
+              <span>Email</span> <br />
+              <input
+                className="w-80 py-1 px-3 border rounded-md outline-none"
+                type="email"
+                placeholder="Enter Your Email"
+                {...register("email", { required: true })}
+              />
+              <br />
+              {errors.email && (
+                <span className="text-sm text-red-500">
+                  This field is required
+                </span>
+              )}
+            </div>
+            <div className="mt-4 space-y-2">
+              <span>Password</span> <br />
+              <input
+                className="w-80 py-1 px-3 border rounded-md outline-none"
+                type="password"
+                placeholder="Enter Your Password"
+                {...register("password", { required: true })}
+              />
+              <br />
+              {errors.password && (
+                <span className="text-sm text-red-500">
+                  This field is required
+                </span>
+              )}
+            </div>
+            {/* button */}
+            <div className="flex justify-around mt-4">
+              <button className="bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200">
+                Login
+              </button>
+              <p>
+                Not registered?{" "}
+                <Link
+                  to="/signup"
+                  className="underline text-blue-500 cursor-pointer"
+                >
+                  Signup
+                </Link>
+              </p>
+            </div>
           </form>
-          
         </div>
       </dialog>
     </div>
@@ -71,3 +110,6 @@ const Login = () => {
 };
 
 export default Login;
+
+
+
